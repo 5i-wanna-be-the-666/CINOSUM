@@ -20,15 +20,32 @@ pip install CINOSUM
 ## 快速上手
 下面是如何使用 CINOSUM 生成一个简单的文本摘要的例子：
 
-```bash
+```python
 from models.CINOSUM import CINOSUM
 
 text = ["这里是需要生成摘要的文本内容列表。"]
 model = CINOSUM()
 
-Extractive = model.Extractive(text,batch_size=2)
-```
+#use in chinese
+Extractive = model.Extractive(text,batch_size=2) # or Extractive = model.Extractive(text, language='zh', batch_size=2)
 
+#use in Tibetan
+#Extractive = model.Extractive(text, language='bo', batch_size=2)
+#use in Uyghur
+#Extractive = model.Extractive(text, language='ug', batch_size=2)
+```
+## 模型下载地址
+| size | type         | link                |
+|------|--------------|---------------------|
+| 450M | transformers | [即将发表](https://www.runoob.com) |
+| 420M | Classifier   | [即将发表](https://www.runoob.com) |
+
+之后您可以这样使用模型
+```python
+from models.CINOSUM import CINOSUM
+device = 'cpu' # or gpu(cuda)
+model = CINOSUM(model_path=your_model_path, device=device)
+```
 ## 支持的语言
 目前，CINOSUM 支持以下民族语言的摘要生成：
 
@@ -49,8 +66,9 @@ Extractive = model.Extractive(text,batch_size=2)
 - 推送到分支（git push origin feature-fooBar）。
 - 创建一个新的 Pull Request。
 
+我们提供了三种语言最简单的分句方法在generate文件中，如果您有更好的分句方法，欢迎提交PR
 ## 许可证
-本项目采用 MIT 许可证 - 详见 LICENSE 文件。
+本项目采用 Apache 许可证 - 详见 LICENSE 文件。
 
 ## 支持
 如果在使用 CINOSUM 时遇到任何问题，或者有任何建议，欢迎通过 GitHub 的 issues 来提交。
