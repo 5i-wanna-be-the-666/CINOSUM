@@ -66,7 +66,7 @@ model = CINOSUM(model_path=your_model_path, device=device)
 - 推送到分支（git push origin feature-fooBar）。
 - 创建一个新的 Pull Request。
 
-我们提供了三种语言最简单的分句方法在generate文件中，如果您有更好的分句方法，欢迎提交PR
+我们提供了三种语言最简单的分句方法在`generate.py`文件中，如果您有更好的分句方法，欢迎提交PR
 ## 许可证
 本项目采用 Apache 许可证 - 详见 LICENSE 文件。
 
