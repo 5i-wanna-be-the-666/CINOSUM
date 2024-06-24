@@ -21,7 +21,7 @@ pip install CINOSUM
 下面是如何使用 CINOSUM 生成一个简单的文本摘要的例子：
 
 ```python
-from models.CINOSUM import CINOSUM
+from CINOSUM.models.CINOSUM import CINOSUM
 
 text = ["这里是需要生成摘要的文本内容列表。"]
 model = CINOSUM()
@@ -42,7 +42,7 @@ Extractive = model.Extractive(text,batch_size=2) # or Extractive = model.Extract
 
 之后您可以这样使用模型
 ```python
-from models.CINOSUM import CINOSUM
+from CINOSUM.models.CINOSUM import CINOSUM
 device = 'cpu' # or gpu(cuda)
 model = CINOSUM(model_path=your_model_path, device=device)
 ```
