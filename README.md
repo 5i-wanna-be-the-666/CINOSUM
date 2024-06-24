@@ -26,7 +26,8 @@ from CINOSUM.models.CINOSUM import CINOSUM
 text = ["这里是需要生成摘要的文本内容列表。"]
 model = CINOSUM()
 
-#use in chinese
+#use in chinese 
+#获得两句话作为摘要
 Extractive = model.Extractive(text,batch_size=2) # or Extractive = model.Extractive(text, language='zh', batch_size=2)
 
 #use in Tibetan
