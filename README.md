@@ -38,7 +38,7 @@ Extractive = model.Extractive(text,batch_size=2) # or Extractive = model.Extract
 ## 模型下载地址
 | size | type         | link                |
 |------|--------------|---------------------|
-| 450M | transformers | [即将发表](https://www.runoob.com) |
+| 450M | transformers | [google网盘](https://drive.google.com/file/d/1bQ_uMg0LnuFJGYU5ye0obRgPTkqco4Br/view?usp=sharing) |
 | 420M | Classifier   | [即将发表](https://www.runoob.com) |
 
 之后您可以这样使用模型
